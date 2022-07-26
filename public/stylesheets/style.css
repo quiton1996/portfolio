@@ -4,7 +4,7 @@
 body {
   background-color: rgb(230, 230, 230) !important;
   font-family: Roboto Mono !important;
-  background: linear-gradient(-45deg, #ffffff, #dddddd, #bbfdc6, #9e9e9e);
+  background: linear-gradient(-45deg, #ffffff, #dddddd, #e2f7e6, #9e9e9e);
   background-size: 400% 400%;
   animation: gradient 12s ease infinite;
 }
@@ -113,6 +113,10 @@ a.anchor {
   visibility: hidden;
 }
 
+#content {
+  margin-bottom: 10rem;
+}
+
 .container-md {
   margin-left: 20% !important;
   margin-right: auto !important;
@@ -120,6 +124,7 @@ a.anchor {
 }
 
 .card {
+  margin-bottom: 48px;
   background-color: rgb(60, 60, 60) !important;
   color: white;
   box-shadow: 0 0 16px gray;

@@ -18,7 +18,7 @@ body {
   font-family: $primary-font !important;
 
 
-  background: linear-gradient(-45deg, #ffffff, #dddddd, #bbfdc6, #9e9e9e);
+  background: linear-gradient(-45deg, #ffffff, #dddddd, #e2f7e6, #9e9e9e);
   background-size: 400% 400%;
   animation: gradient 12s ease infinite;
 
@@ -133,6 +133,10 @@ a.anchor {
   visibility: hidden;
 }
 
+#content {
+  margin-bottom: $block-height;
+}
+
 .container-md {
   margin-left: 20% !important;
   margin-right: auto !important;
@@ -141,6 +145,7 @@ a.anchor {
 }
 
 .card {
+  margin-bottom: 48px;
   background-color: $card-color !important;
   color: white;
   box-shadow: $shadow;  
