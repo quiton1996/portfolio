@@ -88,6 +88,12 @@ a:hover {
   -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 0)), to(rgba(0, 0, 0, 0)));
 }
 
+.block-bottom {
+  top: auto !important;
+  bottom: 0;
+  -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, from(rgb(0, 0, 0)), to(rgba(0, 0, 0, 0))) !important;
+}
+
 .gradient {
   position: fixed;
   top: 0;
