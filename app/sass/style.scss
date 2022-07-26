@@ -3,7 +3,7 @@
 @import 'https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700';
 
 // $primary-color: rgb(60, 60, 60);
-$accent-color: rgb(39, 212, 91);
+$accent-color: #bbfdc6;
 $card-color: rgb(60, 60, 60);
 // $card-color: rgb(100, 100, 100);
 $primary-font: Roboto Mono;
@@ -18,9 +18,9 @@ body {
   font-family: $primary-font !important;
 
 
-  background: linear-gradient(-45deg, #ffffff, #dddddd, #b3b3b3, #9e9e9e);
+  background: linear-gradient(-45deg, #ffffff, #dddddd, #bbfdc6, #9e9e9e);
   background-size: 400% 400%;
-  animation: gradient 8s ease infinite;
+  animation: gradient 12s ease infinite;
 
 
 @keyframes gradient {
@@ -75,11 +75,12 @@ a:hover {
   opacity: 1 !important;
   // border: 2px solid rgb(140,140,140);
   box-shadow: 0 0 24px gray;
-  background-color: $card-color !important;
+  background-color: lightgray !important;
 }
 
 .navbar-brand, .nav-link {
-  color: white !important;
+  color: black !important;
+  font-weight: bold !important;
 }
 
 .fixed-top {
@@ -176,35 +177,41 @@ a.anchor {
 }
 
 .card-flex > * {
+  display: flex;
   margin: auto;
+  text-align: center;
 }
 
 .fa-brands:hover {
-  color: rgb(39, 212, 91);
+  color: $accent-color;
 }
 
 svg:hover > * {
-  fill: rgb(39, 212, 91);
+  fill: $accent-color;
 }
 
 .image-container {
   display: flex;
   align-items: center;
-}
-
-.image:nth-child(1) {
-  margin-left: 0;
-  margin-right: auto;
+  justify-content: space-around;
 }
 
 .image {
-  margin: 16px;
-  flex: 0.5 ;
-  border: solid 12px gray;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: 16px;
+  margin-right: 16px;
+  border: solid 12px $accent-color;
 }
 
-img:hover {
-  transition: border-color 500ms ease, transform 500ms ease;;
-  border: solid 12px rgb(39, 212, 91);
-  transform: scale(0.9);
+.image-text {
+  margin: 16px; 
 }
+
+// .gif-frame {
+//   position: absolute;
+// }
+
+// .gif-frame:hover {
+//   opacity: 0;
+// }
