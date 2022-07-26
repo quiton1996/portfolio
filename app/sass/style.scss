@@ -13,6 +13,9 @@ $shadow: 0 0 16px gray;
 $gradient-height: 12rem;
 $block-height: 10rem;
 
+$mobile-gradient-height: 6rem;
+$mobile-block-height: 5rem;
+
 body {
   background-color: $primary-background !important;
   font-family: $primary-font !important;
@@ -64,6 +67,7 @@ a:hover {
 .navbar {
   margin: auto;
   height: 4rem !important;
+  line-height: 2rem;
   width: 40%;
   margin-top: 16px;
   margin-bottom: 16px;
@@ -167,7 +171,7 @@ a.anchor {
 // }
 
 .card-text {
-  font-size: 18px;
+  font-size: 16px;
   flex: 5;
   padding: 16px;
 }
@@ -185,7 +189,7 @@ a.anchor {
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  gap: 2rem 2rem;
+  gap: 1.75rem 1.75rem;
   // justify-content:space-around;
 }
 
@@ -215,7 +219,7 @@ svg:hover > * {
   margin-bottom: 32px;
   margin-left: 16px;
   margin-right: 16px;
-  height: 30rem;
+  height: 25rem;
   // border: solid 12px $accent-color;
   // border-image-slice: 10;
   // border-image-source: linear-gradient(to right, $accent-color, #ffffff);
@@ -225,7 +229,7 @@ svg:hover > * {
   flex: 1;
   text-align: center;
   margin: 16px; 
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .profile-container {
@@ -258,7 +262,7 @@ img.profile {
 }
 
 .contact-link {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 // .gif-frame {
@@ -279,11 +283,17 @@ img.profile {
     font-size: 12px !important;
   }
 
+  #nav {
+    padding: 0px;
+  }
+
   .navbar {
-    width:90%;
+    width:80%;
     flex-wrap: none !important;
-    height: 3rem !important;
+    line-height: 0rem;
+    height: 2.5rem !important;
     align-items: center !important;
+    box-shadow: 0 0 12px gray;  
   }
 
   .navbar-nav {
@@ -291,23 +301,44 @@ img.profile {
     flex-direction: row !important;
   }
 
+  .whitespace {
+    height: $mobile-block-height;
+  }
+
+  .blur-block {
+    height: $mobile-gradient-height;
+  }
+
+  .gradient {
+    height: $mobile-gradient-height;
+  }
+
   .w-100 {
     width: 75% !important;
     max-width: 75% !important;
   }
 
+  a.anchor {
+    top: -$mobile-block-height;
+  }
+
   .navbar-brand {
     font-size: 18px !important;
-    max-width:25%;
+    max-width: 25%;
   }
   .nav-link {
     font-size: 12px !important;
   }
 
   .container-md {
+    padding: 0% !important;
     margin-left: 2.5% !important;
     margin-right: 2.5% !important;
     max-width: 95% !important;
+  }
+
+  .card {
+    margin-bottom: 0px !important;
   }
 
   img {

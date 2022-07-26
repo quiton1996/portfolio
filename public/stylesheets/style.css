@@ -48,6 +48,7 @@ a:hover {
 .navbar {
   margin: auto;
   height: 4rem !important;
+  line-height: 2rem;
   width: 40%;
   margin-top: 16px;
   margin-bottom: 16px;
@@ -141,7 +142,7 @@ a.anchor {
 }
 
 .card-text {
-  font-size: 18px;
+  font-size: 16px;
   flex: 5;
   padding: 16px;
 }
@@ -159,7 +160,7 @@ a.anchor {
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  gap: 2rem 2rem;
+  gap: 1.75rem 1.75rem;
 }
 
 .card-flex > * {
@@ -188,14 +189,14 @@ svg:hover > * {
   margin-bottom: 32px;
   margin-left: 16px;
   margin-right: 16px;
-  height: 30rem;
+  height: 25rem;
 }
 
 .image-text {
   flex: 1;
   text-align: center;
   margin: 16px;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .profile-container {
@@ -227,7 +228,7 @@ img.profile {
 }
 
 .contact-link {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 896px) {
@@ -237,19 +238,36 @@ img.profile {
   h6 {
     font-size: 12px !important;
   }
+  #nav {
+    padding: 0px;
+  }
   .navbar {
-    width: 90%;
+    width: 80%;
     flex-wrap: none !important;
-    height: 3rem !important;
+    line-height: 0rem;
+    height: 2.5rem !important;
     align-items: center !important;
+    box-shadow: 0 0 12px gray;
   }
   .navbar-nav {
     flex: 1;
     flex-direction: row !important;
   }
+  .whitespace {
+    height: 5rem;
+  }
+  .blur-block {
+    height: 6rem;
+  }
+  .gradient {
+    height: 6rem;
+  }
   .w-100 {
     width: 75% !important;
     max-width: 75% !important;
+  }
+  a.anchor {
+    top: -5rem;
   }
   .navbar-brand {
     font-size: 18px !important;
@@ -259,9 +277,13 @@ img.profile {
     font-size: 12px !important;
   }
   .container-md {
+    padding: 0% !important;
     margin-left: 2.5% !important;
     margin-right: 2.5% !important;
     max-width: 95% !important;
+  }
+  .card {
+    margin-bottom: 0px !important;
   }
   img {
     max-width: 100%;
