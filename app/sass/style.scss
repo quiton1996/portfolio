@@ -179,10 +179,6 @@ a.anchor {
   margin: auto;
 }
 
-.card-title:hover {
-  color:rgb(39, 212, 91);
-}
-
 .fa-brands:hover {
   color: rgb(39, 212, 91);
 }
@@ -191,3 +187,24 @@ svg:hover > * {
   fill: rgb(39, 212, 91);
 }
 
+.image-container {
+  display: flex;
+  align-items: center;
+}
+
+.image:nth-child(1) {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.image {
+  margin: 16px;
+  flex: 0.5 ;
+  border: solid 12px gray;
+}
+
+img:hover {
+  transition: border-color 500ms ease, transform 500ms ease;;
+  border: solid 12px rgb(39, 212, 91);
+  transform: scale(0.9);
+}
