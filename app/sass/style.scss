@@ -152,7 +152,7 @@ a.anchor {
 }
 
 .card {
-  margin-bottom: 48px;
+  margin-bottom: 64px;
   background-color: $card-color !important;
   color: white;
   box-shadow: $shadow;  
@@ -206,7 +206,7 @@ svg:hover > * {
 .image-container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .image {
@@ -214,10 +214,25 @@ svg:hover > * {
   margin-bottom: 32px;
   margin-left: 16px;
   margin-right: 16px;
+  // border: solid 12px $accent-color;
+  // border-image-slice: 10;
+  // border-image-source: linear-gradient(to right, $accent-color, #ffffff);
+}
+
+.image:nth-child(odd) {
   border: solid 12px $accent-color;
+  border-image-slice: 10;
+  border-image-source: linear-gradient(to right, $accent-color, #d6d6d6);
+}
+
+.image:nth-child(even) {
+  border: solid 12px $accent-color;
+  border-image-slice: 10;
+  border-image-source: linear-gradient(to left, $accent-color, #d6d6d6);
 }
 
 .image-text {
+  text-align: center;
   margin: 16px; 
 }
 
