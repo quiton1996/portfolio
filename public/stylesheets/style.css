@@ -20,6 +20,13 @@ body {
     background-position: 0% 50%;
   }
 }
+hr.line {
+  border: none;
+  height: 4px;
+  background: #bbfdc6;
+  opacity: 1;
+}
+
 a {
   color: rgb(170, 170, 170) !important;
   text-decoration: none !important;
@@ -84,6 +91,7 @@ a:hover {
   height: 12rem;
   width: 100%;
   backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   z-index: 1;
   background-color: transparent;
   -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 0)), to(rgba(0, 0, 0, 0)));
@@ -137,6 +145,10 @@ a.anchor {
   box-shadow: 0 0 16px gray;
 }
 
+.card-subtitle {
+  margin-bottom: 0px;
+}
+
 .card-divide {
   display: flex;
 }
@@ -145,6 +157,7 @@ a.anchor {
   font-size: 16px;
   flex: 5;
   padding: 16px;
+  height: 100%;
 }
 
 .icon-container {
@@ -155,12 +168,12 @@ a.anchor {
 }
 
 .card-flex {
-  margin-top: 36px;
+  margin-top: 24px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  gap: 1.75rem 1.75rem;
+  gap: 1.5rem 3rem;
 }
 
 .card-flex > * {
@@ -213,8 +226,6 @@ img {
 
 img.profile {
   display: inline-block;
-  margin-left: 0;
-  margin-right: auto;
   max-width: 100%;
   height: 400px;
   object-fit: cover;
@@ -223,12 +234,24 @@ img.profile {
   margin-right: 16px;
 }
 
+#summa-icon {
+  margin-left: 16px;
+  height: 48px;
+  width: 48px;
+  filter: invert(100%) !important;
+  transform: translateY(-4px);
+}
+
 .wrap-text {
   margin: 0px;
 }
 
 .contact-link {
   font-size: 20px;
+}
+
+#contact-container > .card-text:not(:first-child) {
+  border-left: solid 2px white;
 }
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 896px) {
@@ -291,6 +314,7 @@ img.profile {
     margin-top: 0px !important;
   }
   img.profile {
+    margin-left: 0px;
     height: 150px;
   }
   .gif-image {
@@ -299,6 +323,9 @@ img.profile {
   }
   .gif-image:last-child {
     margin-bottom: 0px;
+  }
+  #summa-icon {
+    margin-left: 0px;
   }
   .card-divide {
     flex-direction: column;
@@ -327,6 +354,9 @@ img.profile {
     margin-top: 16px !important;
     margin-bottom: 4px;
     font-size: 12px;
+  }
+  #contact-container {
+    flex-direction: row;
   }
   .contact-link {
     font-size: 16px;
