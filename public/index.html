@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/public/stylesheets/style.css">
+  <link rel="stylesheet" href="./stylesheets/style.css">
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/4b547afe78.js" crossorigin="anonymous"></script>
@@ -21,7 +21,7 @@
         <a class="navbar-brand" href="#">
           QUI TON
         </a>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- <div class="collapse navbar-collapse" id="navbarNav"> -->
           <ul class="navbar-nav nav-fill w-100">
             <li class="nav-item active">
               <a class="nav-link" href="#about">ABOUT</a>
@@ -33,7 +33,7 @@
               <a class="nav-link" href="#contact">CONTACT</a>
             </li>
           </ul>
-        </div>
+        <!-- </div> -->
     </div>
   </div>
 
@@ -46,8 +46,8 @@
             ABOUT
           </h2>
           <hr>
-          <div class="image-container profile-container">
-            <img src="/app/images/DSC_1574squarepng.png" class="profile">
+          <div class="profile-container">
+            <img src="./images/DSC_1574squarepng.png" class="profile">
           </div>
           <p class="card-text wrap-text">
             
@@ -78,7 +78,7 @@
           <hr>
           <h4 class="card-subtitle mb-2">
             <a href="https://www.thesumma.app" target="_blank">
-              <img src="/app/images/summa_logo_thick.svg" id="summa-icon"  style="margin-left: 16px; height: 48px; width: 48px; filter: invert(100%) !important; transform: translateY(-4px);">
+              <img src="./images/summa_logo_thick.svg" id="summa-icon"  style="margin-left: 16px; height: 48px; width: 48px; filter: invert(100%) !important; transform: translateY(-4px);">
             </a>
             <a href="https://www.thesumma.app" target="_blank">the Summa</a>
           </h4>
@@ -91,7 +91,7 @@
             </p>
             <div class="icon-container">
               <h5>Utilized Technologies</h5>
-              <p class="card-text card-flex">
+              <div class="card-flex">
                 <i class="fa-brands fa-python fa-2xl"></i>
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                   width="32" height="32"
@@ -117,23 +117,23 @@
                   viewBox="0 0 50 50"
                   style=" fill:white;"><path d="M 12 2 C 9.25 2 7 4.25 7 7 L 7 43 C 7 45.75 9.25 48 12 48 L 40 48 C 42.75 48 45 45.75 45 43 L 45 7 C 45 4.25 42.75 2 40 2 Z M 12 4 L 40 4 C 41.667969 4 43 5.332031 43 7 L 43 43 C 43 44.667969 41.667969 46 40 46 L 12 46 C 10.332031 46 9 44.667969 9 43 L 9 7 C 9 5.332031 10.332031 4 12 4 Z M 21.40625 9 L 16.46875 9.03125 C 16.46875 9.03125 16.472656 25.261719 16.5 25.1875 C 31.636719 19.296875 30.5 23.46875 30.5 23.46875 L 30.5 40.9375 L 35.25 40.9375 L 35.25 23.53125 C 35.25 13.941406 21.40625 19.40625 21.40625 19.40625 Z M 31.65625 9.03125 C 31.65625 9.03125 29.949219 12.972656 28.0625 15.28125 L 33.3125 15.28125 C 36.160156 11.59375 37.09375 9.03125 37.09375 9.03125 Z M 16.5625 30.96875 L 16.5625 40.90625 L 21.53125 35.9375 Z"></path>
                 </svg>
-              </p>
+              </div>
             </div>
           </div>
 
           <div class="image-container">
-            <img src="/app/images/summa_app_question_button.gif" class="image active">
-            <h5 class="image-text">Buttons and Links for navigation</h5>
+            <p class="image-text">Buttons and Links for navigation</p>
+            <img src="./images/summa_app_question_button.gif" class="gif-image active">
           </div>
 
           <div class="image-container">
-            <h5 class="image-text">Dark Mode switch</h5>
-            <img src="/app/images/summa_app_dark_mode.gif" class="image active">
+            <p class="image-text">Dark Mode switch</p>
+            <img src="./images/summa_app_dark_mode.gif" class="gif-image active">
           </div>
 
           <div class="image-container">
-            <img src="/app/images/summa_app_bookmark.gif" class="image active">
-            <h5 class="image-text">Save article as bookmark</h5>
+            <p class="image-text">Save article as bookmark</p>
+            <img src="./images/summa_app_bookmark.gif" class="gif-image active">
           </div>
 
 
@@ -154,10 +154,14 @@
           <hr>
           <div class="card-divide">
             <p class="card-text" style="text-align: center;">
-              <a href="mailto: quiton1996@gmail.com">Email</a>
+              <a href="mailto: quiton1996@gmail.com" class="contact-link">
+                Email
+              </a>
             </p>
             <p class="card-text" style="text-align: center;">
-              <a href="https://www.linkedin.com/in/qui-ton-66159112b/">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/qui-ton-66159112b/" class="contact-link">
+                LinkedIn
+              </a>
             </p>
           </div>
         </div>
@@ -167,7 +171,7 @@
 </body>
 
 <footer>
-  <div class="blur-block block-bottom"></div>
+  <!-- <div class="blur-block block-bottom"></div> -->
 </footer>
 
 </html>

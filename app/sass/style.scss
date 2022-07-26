@@ -18,10 +18,10 @@ body {
   font-family: $primary-font !important;
 
 
-  background: linear-gradient(-45deg, #ffffff, #dddddd, #e2f7e6, #9e9e9e);
+  background: linear-gradient(-45deg, #ffffff, #ece4a4, #e2f7e6, #9e9e9e);
   background-size: 400% 400%;
   animation: gradient 12s ease infinite;
-
+}
 
 @keyframes gradient {
     0% {
@@ -34,7 +34,6 @@ body {
         background-position: 0% 50%;
     }
 }
-}
 
 a {
   color: rgb(170, 170, 170) !important;
@@ -43,7 +42,7 @@ a {
 
 a:hover {
   color: $accent-color !important;
-  transition: 500ms;
+  transition: 250ms;
 }
 
 #hero {
@@ -162,10 +161,10 @@ a.anchor {
   display: flex;
 }
 
-.card-divide > .card-text:nth-child(2) {
-  border-left: 4px solid white;
-  // height: 100px;
-}
+// .card-divide > .card-text:nth-child(2) {
+//   border-left: 4px solid white;
+//   // height: 100px;
+// }
 
 .card-text {
   font-size: 18px;
@@ -181,11 +180,12 @@ a.anchor {
 }
 
 .card-flex {
+  margin-top: 36px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  gap: 20px 50px;
+  gap: 2rem 2rem;
   // justify-content:space-around;
 }
 
@@ -206,39 +206,38 @@ svg:hover > * {
 .image-container {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  text-align: left;
+  justify-content: end;
 }
 
-.image {
+.gif-image {
   margin-top: 32px;
   margin-bottom: 32px;
   margin-left: 16px;
   margin-right: 16px;
+  height: 30rem;
   // border: solid 12px $accent-color;
   // border-image-slice: 10;
   // border-image-source: linear-gradient(to right, $accent-color, #ffffff);
 }
 
-.image:nth-child(odd) {
-  border: solid 12px $accent-color;
-  border-image-slice: 10;
-  border-image-source: linear-gradient(to right, $accent-color, #d6d6d6);
-}
-
-.image:nth-child(even) {
-  border: solid 12px $accent-color;
-  border-image-slice: 10;
-  border-image-source: linear-gradient(to left, $accent-color, #d6d6d6);
-}
-
 .image-text {
+  flex: 1;
   text-align: center;
   margin: 16px; 
+  font-size: 18px;
 }
 
 .profile-container {
   float: left;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  justify-content: end;
+}
 
+img {
+  border-radius: 8px;
 }
 
 img.profile {
@@ -249,12 +248,17 @@ img.profile {
   height: 400px;
   object-fit: cover;
   margin-top: 16px;
+  // margin-bottom: 16px;
   margin-left: 16px;
-  margin-right: 24px;
+  margin-right: 16px;
 }
 
 .wrap-text {
   margin: 8px;
+}
+
+.contact-link {
+  font-size: 24px;
 }
 
 // .gif-frame {
@@ -264,3 +268,108 @@ img.profile {
 // .gif-frame:hover {
 //   opacity: 0;
 // }
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 896px) { 
+
+  h5 {
+    font-size: 16px !important;
+  }
+
+  h6 {
+    font-size: 12px !important;
+  }
+
+  .navbar {
+    width:90%;
+    flex-wrap: none !important;
+    height: 3rem !important;
+    align-items: center !important;
+  }
+
+  .navbar-nav {
+    flex: 1;
+    flex-direction: row !important;
+  }
+
+  .w-100 {
+    width: 75% !important;
+    max-width: 75% !important;
+  }
+
+  .navbar-brand {
+    font-size: 18px !important;
+    max-width:25%;
+  }
+  .nav-link {
+    font-size: 12px !important;
+  }
+
+  .container-md {
+    margin-left: 2.5% !important;
+    margin-right: 2.5% !important;
+    max-width: 95% !important;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 0px !important;
+  }
+
+  img.profile {
+    height: 150px;
+  }
+
+  .gif-image{
+    margin: 16px 16px;
+    height: auto;
+  }
+
+  .gif-image:last-child {
+    margin-bottom: 0px;
+  }
+
+  .card-divide{
+    flex-direction: column;
+  }
+
+  .card-divide > .card-text:nth-child(2) {
+    // border-left: none !important;
+    // height: 100px;
+  }
+
+  .card-flex {
+    margin-top: 16px;
+    gap: 0.5rem 1.5rem;
+  }
+
+  .icon-container {
+    flex: 3;
+    padding: 16px;
+    border-left: none;
+    border-top: solid 2px white !important;
+    border-bottom: solid 2px white !important;
+  }
+
+  .image-container {
+    flex-direction: column;
+    float: none;
+    // border-top: solid 2px white !important;
+  }
+
+  .card-text {
+    font-size: 12px;
+    padding: 0px;
+    margin-bottom: 16px;
+  }
+
+  .image-text {
+    margin-top: 16px !important;
+    margin-bottom: 4px;
+    font-size: 12px;
+  }
+
+  .contact-link {
+    font-size: 16px;
+  }
+}
