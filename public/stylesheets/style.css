@@ -336,6 +336,8 @@ img.profile {
   }
   .navbar {
     width: 80%;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
     flex-wrap: none !important;
     line-height: 0rem;
     height: 2.5rem !important;
