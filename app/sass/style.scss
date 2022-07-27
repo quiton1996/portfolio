@@ -21,7 +21,7 @@ body {
   font-family: $primary-font !important;
 
 
-  background: linear-gradient(-45deg, #ffffff, #ffffff, $accent-color , #9e9e9e);
+  background: linear-gradient(-45deg, #ffffff, #99b692, #c5f1cc , #9e9e9e);
   background-size: 400% 400%;
   animation: gradient 12s ease infinite;
 }
@@ -46,12 +46,12 @@ hr.line {
 }
 
 a {
-  color: rgb(170, 170, 170) !important;
+  color: $accent-color !important;
   text-decoration: none !important;
 }
 
 a:hover {
-  color: $accent-color !important;
+  color: rgb(170, 170, 170)!important;
   transition: 250ms;
 }
 
@@ -260,7 +260,7 @@ svg:hover > * {
 }
 
 .still-image {
-  border: solid 8px $accent-color;
+  // border: solid 8px $accent-color;
   @extend .gif-image;
 }
 
@@ -373,6 +373,10 @@ img.profile {
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 896px) { 
 
+  body {
+    animation: gradient 8s ease infinite;
+  }
+
   h5 {
     font-size: 16px !important;
   }
@@ -460,6 +464,7 @@ img.profile {
   .gif-image{
     margin: 16px 16px;
     height: auto;
+    max-width: 100% !important;
   }
 
   .gif-image:last-child {
