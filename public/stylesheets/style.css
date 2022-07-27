@@ -227,6 +227,7 @@ svg:hover > * {
   margin-left: 16px;
   margin-right: 16px;
   width: 40rem;
+  max-width: 70%;
 }
 
 .still-image {
