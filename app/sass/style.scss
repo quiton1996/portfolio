@@ -71,6 +71,13 @@ a:hover {
   // backdrop-filter: blur(1px);
 }
 
+#nav-bottom {
+  position: relative;
+  z-index:2;
+  width: 100%;
+  padding: 16px;
+}
+
 .navbar {
   margin: auto;
   height: 4rem !important;
@@ -86,6 +93,26 @@ a:hover {
   // border: 2px solid rgb(140,140,140);
   box-shadow: 0 0 24px gray;
   background-color: lightgray !important;
+}
+
+.navbar-bottom {
+  margin: auto;
+  height: 4rem !important;
+  width: 30%;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  border-radius: 8px !important;
+  text-align: center;
+  opacity: 1 !important;
+  box-shadow: 0 0 24px gray;
+  background-color: lightgray !important;
+}
+
+.navbar-nav {
+  flex: 1;
+  flex-direction: row !important;
 }
 
 .navbar-brand, .nav-link {
@@ -149,10 +176,6 @@ a.anchor {
   position: relative;
   top: -$block-height;
   visibility: hidden;
-}
-
-#content {
-  margin-bottom: $block-height;
 }
 
 .container-md {
@@ -228,10 +251,15 @@ svg:hover > * {
   margin-bottom: 32px;
   margin-left: 16px;
   margin-right: 16px;
-  height: 25rem;
+  width: 40rem;
   // border: solid 12px $accent-color;
   // border-image-slice: 10;
   // border-image-source: linear-gradient(to right, $accent-color, #ffffff);
+}
+
+.still-image {
+  border: solid 8px $accent-color;
+  @extend .gif-image;
 }
 
 .image-text {
@@ -283,6 +311,14 @@ img.profile {
   border-left: solid 2px white;
 }
 
+.footer-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 16px;
+}
+
 // .gif-frame {
 //   position: absolute;
 // }
@@ -290,6 +326,48 @@ img.profile {
 // .gif-frame:hover {
 //   opacity: 0;
 // }
+
+@media (max-width: 1350px) and (min-width: 400px) { 
+  .container-md {
+    margin-left: 2.5% !important;
+    margin-right: 2.5% !important;
+    max-width: 95% !important;
+  }
+
+  .navbar {
+    width: 70% !important;
+  }
+
+  .navbar-bottom {
+    width: 50% !important;
+  }
+
+  .navbar-brand {
+    font-size: 1.25rem !important;
+  }
+
+  .nav-link {
+    font-size: 1rem !important;
+  }
+
+  .profile-container {
+    text-align: center;
+  }
+
+  img.profile {
+    max-height: 80% !important;
+  }
+
+  .gif-image {
+    height: 100% !important;
+    max-width: 80% !important;
+  }
+
+  .still-image {
+    height: 70% !important;
+    max-width: 70% !important;
+  }
+}   
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 896px) { 
 
@@ -306,7 +384,7 @@ img.profile {
   }
 
   .navbar {
-    width:80%;
+    width: 80%;
     flex-wrap: none !important;
     line-height: 0rem;
     height: 2.5rem !important;
@@ -314,9 +392,10 @@ img.profile {
     box-shadow: 0 0 12px gray;  
   }
 
-  .navbar-nav {
-    flex: 1;
-    flex-direction: row !important;
+  .navbar-bottom {
+    width: 60%;
+    height: 2.5rem !important;
+    box-shadow: 0 0 12px gray;  
   }
 
   .whitespace {
@@ -357,6 +436,10 @@ img.profile {
 
   .card {
     margin-bottom: 0px !important;
+  }
+
+  .card-subtitle {
+    margin-left: 0px !important;
   }
 
   img {
@@ -408,9 +491,13 @@ img.profile {
     margin-bottom: 16px;
   }
 
+  .still-image {
+    margin: 0px;
+  }
+
   .image-text {
     text-align: center;
-    margin-top: 16px !important;
+    margin-top: 24px !important;
     margin-bottom: 4px;
     font-size: 12px;
   }
@@ -421,5 +508,9 @@ img.profile {
 
   .contact-link {
     font-size: 16px;
+  }
+
+  .footer-text {
+    font-size: 12px;
   }
 }
