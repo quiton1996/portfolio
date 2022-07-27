@@ -411,6 +411,9 @@ img.profile {
     border-top: solid 2px white !important;
     border-bottom: solid 2px white !important;
   }
+  .gallery-container {
+    border-top: solid 2px white;
+  }
   .image-container {
     flex-direction: column;
     float: none;
