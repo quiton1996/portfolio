@@ -171,6 +171,7 @@ a.anchor {
 
 .card-subtitle {
   margin-bottom: 0px;
+  margin-left: 16px !important;
 }
 
 .card-divide {
@@ -235,7 +236,7 @@ svg:hover > * {
 
 .image-text {
   flex: 1;
-  text-align: center;
+  text-align: left;
   margin: 16px; 
   font-size: 16px;
 }
@@ -264,7 +265,6 @@ img.profile {
 }
 
 #summa-icon {
-  margin-left: 16px;
   height: 48px; 
   width: 48px; 
   filter: invert(100%) !important; 
@@ -379,10 +379,6 @@ img.profile {
     margin-bottom: 0px;
   }
 
-  #summa-icon {
-    margin-left: 0px;
-  }
-
   .card-divide{
     flex-direction: column;
   }
@@ -413,6 +409,7 @@ img.profile {
   }
 
   .image-text {
+    text-align: center;
     margin-top: 16px !important;
     margin-bottom: 4px;
     font-size: 12px;
