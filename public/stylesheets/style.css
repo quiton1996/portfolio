@@ -363,6 +363,7 @@ img.profile {
     top: -5rem;
   }
   .navbar-brand {
+    margin-right: 0px !important;
     font-size: 18px !important;
     max-width: 25%;
   }
