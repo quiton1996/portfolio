@@ -81,14 +81,14 @@ a:hover {
 .navbar {
   margin: auto;
   height: 4rem !important;
-  line-height: 2rem;
+  line-height: 0rem;
   width: 40%;
   margin-top: 16px;
   margin-bottom: 16px;
   padding-left: 16px !important;
   padding-right: 16px !important;
   border-radius: 8px !important;
-  align-items: baseline !important;
+  align-items: center !important;
   opacity: 1 !important;
   // border: 2px solid rgb(140,140,140);
   box-shadow: 0 0 24px gray;
@@ -113,6 +113,7 @@ a:hover {
 .navbar-nav {
   flex: 1;
   flex-direction: row !important;
+  align-items: center;
 }
 
 .navbar-brand, .nav-link {
@@ -413,7 +414,6 @@ img.profile {
 
   .w-100 {
     width: 75% !important;
-    max-width: 75% !important;
   }
 
   a.anchor {
